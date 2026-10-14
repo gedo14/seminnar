@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيمنار الميكاترونكس | جامعة الزقازيق الأهلية</title>
+    <!-- ربط ملف الـ CSS الخارجي -->
+    <link rel="stylesheet" href="style.css">
+    <!-- خطوط Google التقنية الحديثة -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome للأيقونات الهندسية -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- خلفية الشعار الثابتة (Watermark) مع معالجة غياب الصورة بـ Placeholder محلي آمن -->
+    <div class="watermark-container">
+        <img src="photos/photo5.png" alt="University Logo" onerror="this.style.display='none'">
+    </div>
+
+    <!-- شبكة خلفية هندسية وتأثيرات إضاءة متطورة -->
+    <div class="cyber-grid"></div>
+    <div class="ambient-glow-orb"></div>
+
+    <!-- الشريط العلوي الاحترافي -->
+    <header class="top-nav-bar">
+        <div class="brand-box">
+            <div class="logo-mini">
+                <img src="photos/photo5.png" alt="Logo" onerror="this.src='https://via.placeholder.com/40?text=ZNU'">
+            </div>
+            <div class="brand-titles">
+                <span class="uni-tag">جامعة الزقازيق الأهلية</span>
+                <span class="dept-tag">هندسة الميكاترونكس</span>
+            </div>
+        </div>
+        <div class="top-actions">
+            <button id="notesToggleBtn" class="top-btn" title="ملاحظات المتحدث (N)"><i class="fas fa-sticky-note"></i> الملاحظات</button>
+            <button id="fullscreenBtn" class="top-btn" title="ملء الشاشة (F)"><i class="fas fa-expand"></i></button>
+        </div>
+    </header>
+
+    <!-- منطقة عرض الشرائح (11 سلايد سينمائي مستقل تماماً) -->
+    <main class="presentation-viewport">
+
+        <!-- ================= SLIDE 1: Cover & Team Intro ================= -->
+        <section class="slide-pane active" data-slide="1" data-duration="45 ثانية">
+            <div class="slide-content-wrapper hero-layout">
+                <div class="hero-left">
+                    <div class="academic-badge"><i class="fas fa-graduation-cap"></i> سيمنار هندسي أكاديمي</div>
+                    <h1 class="hero-main-title">Robotics, Automation & AI</h1>
+                    <p class="hero-sub">The Future of Smart Manufacturing</p>
+                    <div class="supervisor-badge">
+                        <i class="fas fa-user-tie"></i> تحت إشراف: <strong>د. منصور أبو جميلة</strong>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="svg-robot-hero">
+                        <svg viewBox="0 0 200 180" class="tech-svg-anim">
+                            <rect x="70" y="140" width="60" height="20" rx="4" fill="#38bdf8" opacity="0.8"/>
+                            <rect x="90" y="80" width="20" height="60" fill="#94a3b8" rx="3"/>
+                            <circle cx="100" cy="80" r="15" fill="#00d2d3"/>
+                            <rect x="60" y="50" width="80" height="15" rx="3" fill="#38bdf8" transform="rotate(-15 100 50)"/>
+                            <circle cx="50" cy="45" r="10" fill="#fff" class="pulse-circle"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- بطاقات التيم الأربعة في صف أفقي متناسق -->
+            <div class="team-horizontal-grid">
+                <div class="team-card-item">
+                    <div class="member-avatar">
+                        <img src="photos/photo1.jpg" alt="أحمد عوف" onerror="this.src='https://via.placeholder.com/120?text=Ahmed+Aouf'">
+                    </div>
+                    <h4>أحمد عوف السيد الجمل</h4>
+                </div>
+                <div class="team-card-item">
+                    <div class="member-avatar">
+                        <img src="photos/photo2.jpg" alt="أحمد السيد" onerror="this.src='https://via.placeholder.com/120?text=Ahmed+Elsayed'">
+                    </div>
+                    <h4>أحمد السيد سعيد إبراهيم</h4>
+                </div>
+                <div class="team-card-item">
+                    <div class="member-avatar">
+                        <img src="photos/photo3.jpg" alt="أحمد إبراهيم" onerror="this.src='https://via.placeholder.com/120?text=Ahmed+Ibrahim'">
+                    </div>
+                    <h4>أحمد إبراهيم السيد حسن</h4>
+                </div>
+                <div class="team-card-item">
+                    <div class="member-avatar">
+                        <img src="photos/photo4.jpg" alt="عبدالله عنتر" onerror="this.src='https://via.placeholder.com/120?text=Abdallah+Antar'">
+                    </div>
+                    <h4>عبدالله عنتر عبدالعزيز</h4>
+                </div>
+            </div>
+
+            <div class="speaker-notes">
+                ملاحظات المتحدث: رحب بالأستاذ والزملاء الحاضرين، عرّف بالتيم وقسم الميكاترونكس بجامعة الزقازيق الأهلية، واطرح موضوع السيمنار بثقة.
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 2: Modern Technology Intro ================= -->
+        <section class="slide-pane" data-slide="2" data-duration="1 دقيقة">
+            <div class="slide-content-wrapper">
+                <div class="pane-header">
+                    <span class="num-tag">02</span>
+                    <h2>Robotics, Automation & AI</h2>
+                    <p>Three Core Technologies Transforming Modern Industry</p>
+                </div>
+
+                <div class="pillars-grid-3">
+                    <div class="pillar-box">
+                        <i class="fas fa-robot"></i>
+                        <h3>Robotics</h3>
+                        <p>تنفيذ المهام الميكانيكية المتكررة بدقة عالية وأمان تام.</p>
+                    </div>
+                    <div class="pillar-box">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Automation</h3>
+                        <p>تشغيل الماكينات وتنظيم العمليات الصناعية تلقائياً.</p>
+                    </div>
+                    <div class="pillar-box">
+                        <i class="fas fa-brain"></i>
+                        <h3>Artificial Intelligence</h3>
+                        <p>تحليل البيانات والتعرف على الأنماط واتخاذ القرار.</p>
+                    </div>
+                </div>
+
+                <div class="highlights-row">
+                    <span><i class="fas fa-bolt"></i> Faster Production</span>
+                    <span><i class="fas fa-bullseye"></i> High Accuracy</span>
+                    <span><i class="fas fa-shield-alt"></i> Enhanced Safety</span>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                ملاحظات المتحدث: وضح كيف تتكامل التقنيات الثلاث لتأسيس المصانع الذكية الحديثة.
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 3: What is Robotics? ================= -->
+        <section class="slide-pane" data-slide="3" data-duration="1.5 دقيقة">
+            <div class="slide-content-wrapper">
+                <div class="pane-header">
+                    <span class="num-tag">03</span>
+                    <h2>What is Robotics?</h2>
+                </div>
+
+                <div class="split-content-grid">
+                    <div class="left-text-block">
+                        <div class="highlight-quote">
+                            مجال هندسي متقدم يجمع بين <strong>الميكانيكا، الإلكترونيات، البرمجة، وأنظمة التحكم</strong> لتصميم روبوتات تنفذ مهام تلقائية.
+                        </div>
+                        <ul class="styled-checks">
+                            <li><i class="fas fa-check-circle"></i> هيكل ميكانيكي متين</li>
+                            <li><i class="fas fa-check-circle"></i> موتورات ومشغلات حركة</li>
+                            <li><i class="fas fa-check-circle"></i> حساسات لجمع البيانات</li>
+                            <li><i class="fas fa-check-circle"></i> وحدة تحكم مركزية</li>
+                        </ul>
+                    </div>
+
+                    <div class="right-graphic-block">
+                        <div class="tech-card-showcase">
+                            <i class="fas fa-microchip" style="font-size: 3rem; color: var(--accent-cyan);"></i>
+                            <h4>دقة استثنائية وأداء متواصل</h4>
+                            <p>تستخدم لتنفيذ المهام الشاقة والمتكررة دون إجهاد أو أخطاء بشرية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                ملاحظات المتحدث: ركز على الدمج بين الهاردوير والسوفتوير في الروبوتات الصناعية.
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 4: Applications of Robotics ================= -->
+        <section class="slide-pane" data-slide="4" data-duration="1.25 دقيقة">
+            <div class="slide-content-wrapper">
+                <div class="pane-header">
+                    <span class="num-tag">04</span>
+                    <h2>Industrial Applications of Robotics</h2>
+                </div>
+
+                <div class="apps-grid-6">
+                    <div class="app-item-card"><i class="fas fa-car-crash"></i><h4>Welding</h4><p>لحام هياكل السيارات بدقة وثبات.</p></div>
+                    <div class="app-item-card"><i class="fas fa-puzzle-piece"></i><h4>Assembly</h4><p>تركيب وتجميع المكونات بدقة.</p></div>
+                    <div class="app-item-card"><i class="fas fa-boxes"></i><h4>Material Handling</h4><p>نقل الخامات والمنتجات داخل المصنع.</p></div>
+                    <div class="app-item-card"><i class="fas fa-paint-roller"></i><h4>Painting</h4><p>توزيع الطلاء بصورة منتظمة.</p></div>
+                    <div class="app-item-card"><i class="fas fa-search-dollar"></i><h4>Quality Inspection</h4><p>فحص المنتجات وكشف العيوب.</p></div>
+                    <div class="app-item-card"><i class="fas fa-radiation"></i><h4>Hazardous Tasks</h4><p>التعامل الآمن مع البيئات الخطرة.</p></div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                ملاحظات المتحدث: استعرض التطبيقات الهندسية وكيف تساهم الأذرع الروبوتية في حماية العمال وزيادة الإنتاجية.
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 5: What is Automation? ================= -->
+        <section class="slide-pane" data-slide="5" data-duration="1.25 دقيقة">
+            <div class="slide-content-wrapper">
+                <div class="pane-header">
+                    <span class="num-tag">05</span>
+                    <h2>What is Automation?</h2>
+                    <p>تشغيل الماكينات والعمليات تلقائياً دون تدخل بشري دائم.</p>
+                </div>
+
+                <div class="split-content-grid">
+                    <div class="left-text-block">
+                        <ul class="styled-checks">
+                            <li><strong>العناصر:</strong> حساسات، وحدات تحكم PLC، وسير ناقل.</li>
+                            <li><strong>التطبيقات:</strong> خطوط التجميع، ماكينات التعبئة، والتحكم الآلي.</li>
+                            <li><strong>الفوائد:</strong> توفير الوقت، ثبات الجودة، ومنع الأخطاء اليدوية.</li>
+                        </ul>
+                    </div>
+
+                    <!-- محاكاة سير الإنتاج الحركية (Conveyor Simulation) -->
+                    <div class="sim-box-panel">
+                        <div class="sim-title-bar"><i class="fas fa-play-circle"></i> محاكاة سير الإنتاج (Conveyor Belt)</div>
+                        <div class="conveyor-track-area">
+                            <div class="moving-item-box" id="simProductBox">📦</div>
+                            <div class="sensor-node-point" id="simSensorNode">
+                                <div class="sensor-light"></div>
+                                <span>Sensor</span>
+                            </div>
+                        </div>
+                        <div class="sim-action-row">
+                            <button class="sim-action-btn" id="runSimAction"><i class="fas fa-play"></i> تشغيل المحاكاة</button>
+                            <span class="sim-status-txt" id="simStatusMsg">جاهز للاختبار</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                ملاحظات المتحدث: اشرح مفهوم الأتمتة وشغل محاكاة السير لإظهار تفاعل الحساس مع وحدة الـ PLC.
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 6: Robotics vs Automation ================= -->
+        <section class="slide-pane" data-slide="6" data-duration="1.25 دقيقة">
+            <div class="slide-content-wrapper">
+                <div class="pane-header">
+                    <span class="num-tag">06</span>
+                    <h2>Robotics vs Automation</h2>
+                </div>
+
+                <div class="comparison-grid-2">
+                    <div class="comp-column robot-col">
+                        <div class="comp-col-header"><i class="fas fa-robot"></i> Robotics</div>
+                        <ul>
+                            <li><strong>التركيز:</strong> تصميم الآلة والحركيات والمفاصل.</li>
+                            <li><strong>العناصر:</strong> ميكانيكا، موتورات، حساسات موضع.</li>
+                            <li><strong>المهام:</strong> تنفيذ حركات ملموسة (لحام، نقل).</li>
+                        </ul>
+                    </div>
+                    <div class="comp-column auto-col">
+                        <div class="comp-col-header"><i class="fas fa-cogs"></i> Automation</div>
+                        <ul>
+                            <li><strong>التركيز:</strong> تشغيل العملية الصناعية كمنظومة.</li>
+                            <li><strong>العناصر:</strong> حساسات، PLC، سيور، ماكينات.</li>
+                            <li><strong>المهام:</strong> تنسيق خطوط سير وتشغيل تلقائي.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="note-box-bottom">
+                    <i class="fas fa-info-circle"></i> <strong>قاعدة هندسية:</strong> ليس كل نظام Automation يحتوي بالضرورة على روبوت، لكن الروبوت جزء من نظام الأتمتة الشامل.
+                </div>
+            </div>
+            <div class="speaker-notes">
+                ملاحظات المتحدث: وضح الفرق الجوهري بين الروبوت كآلة والأتمتة كنظام مصنع متكامل.
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 7: Artificial Intelligence ================= -->
+        <section class="slide-pane" data-slide="7" data-duration="1.5 دقيقة">
+            <div class="slide-content-wrapper">
+                <div class="pane-header">
+                    <span class="num-tag">07</span>
+                    <h2>Artificial Intelligence in Industry</h2>
+                </div>
+
+                <div class="split-content-grid">
+                    <div class="left-text-block">
+                        <div class="ai-feature-row"><i class="fas fa-eye"></i> <strong>Quality Inspection:</strong> فحص عيوب المنتجات بالرؤية الحاسوبية.</div>
+                        <div class="ai-feature-row"><i class="fas fa-clock"></i> <strong>Predictive Maintenance:</strong> التنبؤ بالأعطال وصيانة استباقية.</div>
+                        <div class="ai-feature-row"><i class="fas fa-chart-pie"></i> <strong>Production Optimization:</strong> تحليل الأداء وتحسين الإنتاج.</div>
+                    </div>
+
+                    <!-- محاكاة الفحص الذكي للكاميرا (AI Vision Scan) -->
+                    <div class="sim-box-panel">
+                        <div class="ai-camera-viewport">
+                            <div class="ai-scan-laser"></div>
+                            <div class="scanned-item-glyph">📦</div>
+                        </div>
+                        <div class="ai-result-tag pass" id="aiScanBadge">
+                            <span>PASS - منتج مطابق للمواصفات</span>
+                        </div>
+                        <button class="sim-action-btn" id="triggerAiScan"><i class="fas fa-camera"></i> فحص منتج جديد بالـ AI</button>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                ملاحظات المتحدث: وضح دور الذكاء الاصطناعي في فحص الجودة والتنبؤ بالأعطال عبر خوارزميات الرؤية الحاسوبية.
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 8: Sensors ================= -->
+        <section class="slide-pane" data-slide="8" data-duration="1.25 دقيقة">
+            <div class="slide-content-wrapper">
+                <div class="pane-header">
+                    <span class="num-tag">08</span>
+                    <h2>Sensors — The Eyes of the System</h2>
+                    <p>أجهزة تقيس الكميات الفيزيائية وتكتشف المتغيرات البيئية.</p>
+                </div>
+
+                <div class="sensors-tags-row">
+                    <span class="s-tag">Distance</span>
+                    <span class="s-tag">Temperature</span>
+                    <span class="s-tag">Proximity</span>
+                    <span class="s-tag">Position</span>
+                    <span class="s-tag">Pressure</span>
+                </div>
+
+                <div class="sim-box-panel">
+                    <div class="sensor-track-box">
+                        <div class="moving-robot-icon" id="sensorRobotObj">🤖</div>
+                        <div class="obstacle-block">🚧 عائق</div>
+                    </div>
+                    <div class="sensor-info-row">
+                        <span>المسافة المقاسة: <strong id="sensorValText">120 سم</strong></span>
+                        <button class="sim-action-btn" id="testSensorBtn"><i class="fas fa-play"></i> اختبار حساس المسافة</button>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                ملاحظات المتحدث: الحساسات هي عيون الميكاترونكس. اشرح أنواعها واختبر محاكاة حساس المسافة للتوقف عند العوائق.
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 9: Actuators ================= -->
+        <section class="slide-pane" data-slide="9" data-duration="1.25 دقيقة">
+            <div class="slide-content-wrapper">
+                <div class="pane-header">
+                    <span class="num-tag">09</span>
+                    <h2>Actuators — Turning Commands into Motion</h2>
+                </div>
+
+                <div class="comparison-grid-2">
+                    <div class="card-tech-box">
+                        <h3><i class="fas fa-bolt"></i> أنواع المشغلات الرئيسية</h3>
+                        <ul class="styled-checks" style="font-size:0.95rem;">
+                            <li>Electric & Servo Motors للحركة الدقيقة</li>
+                            <li>Hydraulic Actuators لضغط السوائل والقوى الكبيرة</li>
+                            <li>Pneumatic Actuators باستخدام ضغط الهواء</li>
+                            <li>Linear Actuators للحركة الخطية</li>
+                        </ul>
+                    </div>
+                    <div class="card-tech-box highlight-border">
+                        <h3><i class="fas fa-exchange-alt"></i> دورة معالجة الإشارة</h3>
+                        <div class="signal-flow-vertical">
+                            <span><i class="fas fa-eye"></i> Sensor (يقيس)</span>
+                            <i class="fas fa-arrow-down"></i>
+                            <span><i class="fas fa-microchip"></i> Controller (يعالج)</span>
+                            <i class="fas fa-arrow-down"></i>
+                            <span><i class="fas fa-fist-raised"></i> Actuator (ينفذ الحركة)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                ملاحظات المتحدث: المشغلات هي عضلات النظام، واشرح دورة معالجة الإشارة من الحساس للمتحكم ثم للمشغل.
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 10: How Everything Works Together ================= -->
+        <section class="slide-pane" data-slide="10" data-duration="2 دقيقة">
+            <div class="slide-content-wrapper">
+                <div class="pane-header">
+                    <span class="num-tag">10</span>
+                    <h2>How Do These Technologies Work Together?</h2>
+                    <p>منظومة التصنيع الذكي المتكاملة (Smart Production Line)</p>
+                </div>
+
+                <div class="workflow-grid-6">
+                    <div class="wf-item"><span>1</span> Sensors تكتشف المنتج</div>
+                    <div class="wf-item"><span>2</span> PLC يعالج الإشارة</div>
+                    <div class="wf-item"><span>3</span> Actuators تنفذ الفعل</div>
+                    <div class="wf-item"><span>4</span> Robotics تلتقط وتناور</div>
+                    <div class="wf-item"><span>5</span> Automation تنسق العمليات</div>
+                    <div class="wf-item"><span>6</span> AI يفحص الجودة الذكية</div>
+                </div>
+
+                <div class="mechatronics-core-tag">
+                    <i class="fas fa-graduation-cap"></i> 
+                    <strong>جوهر هندسة الميكاترونكس:</strong> دمج <span>الميكانيكا + الإلكترونيات + التحكم + البرمجة</span> لبناء أنظمة صناعية ذكية ومتكاملة.
+                </div>
+            </div>
+            <div class="speaker-notes">
+                ملاحظات المتحدث: اربط كل التقنيات ببعضها في خط إنتاج ذكي مبرزاً قيمة تخصص الميكاترونكس.
+            </div>
+        </section>
+
+        <!-- ================= SLIDE 11: Conclusion & Q&A ================= -->
+        <section class="slide-pane" data-slide="11" data-duration="2 دقيقة">
+            <div class="slide-content-wrapper center-hero-layout">
+                <div class="conclusion-badge">الخاتمة والنقاش التفاعلي</div>
+                <h2 class="hero-main-title">THE FUTURE IS SMART MANUFACTURING</h2>
+                <p class="hero-sub">مهندس الميكاترونكس هو القادر على قيادة هذا التطور الصناعي.</p>
+
+                <div class="quiz-trigger-wrap">
+                    <button class="primary-glow-btn" id="openQuizModalBtn">
+                        <i class="fas fa-question-circle"></i> TEST YOUR KNOWLEDGE (اختبر معلومات زملائك)
+                    </button>
+                </div>
+
+                <div class="final-thanks-card">
+                    <i class="fas fa-heart" style="color: #ff4757; font-size: 2rem;"></i>
+                    <h2>Thank You for Listening</h2>
+                    <p>شكراً لحسن استماعكم ونتقبل أسئلتكم واستفساراتكم</p>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                ملاحظات المتحدث: اختم السيمنار وافتح زر الاختبار التفاعلي لتلقي إجابات الزملاء بحماس.
+            </div>
+        </section>
+
+    </main>
+
+    <!-- الشريط السفلي للتنقل والتقدم -->
+    <nav class="bottom-nav-bar">
+        <button id="prevBtn" class="nav-control-btn"><i class="fas fa-arrow-right"></i> السابق</button>
+        <div class="progress-bar-wrapper">
+            <div class="progress-fill-bar" id="progressBar"></div>
+            <span id="slideCounter" class="counter-display">01 / 11</span>
+        </div>
+        <button id="nextBtn" class="nav-control-btn">التالي <i class="fas fa-arrow-left"></i></button>
+    </nav>
+
+    <!-- نافذة الملاحظات المنبثقة (Speaker Notes) -->
+    <div id="notesModal" class="custom-modal-overlay">
+        <div class="custom-modal-box">
+            <div class="modal-top-bar">
+                <h3><i class="fas fa-sticky-note"></i> ملاحظات المتحدث (Speaker Notes)</h3>
+                <button class="modal-close-x" id="closeNotesBtn">&times;</button>
+            </div>
+            <div class="modal-body-content" id="notesContentBody"></div>
+        </div>
+    </div>
+
+    <!-- نافذة الأسئلة التفاعلية (Q&A Quiz Modal) -->
+    <div id="quizModal" class="custom-modal-overlay">
+        <div class="custom-modal-box quiz-box-wide">
+            <div class="modal-top-bar">
+                <h3><i class="fas fa-brain"></i> تحدي المعرفة الهندسية (Knowledge Quiz)</h3>
+                <button class="modal-close-x" id="closeQuizBtn">&times;</button>
+            </div>
+            <div class="modal-body-content">
+                <div class="quiz-question-card">
+                    <h4 id="qTitleText">السؤال الأول...</h4>
+                    <div class="quiz-options-list" id="qOptionsList"></div>
+                    <div class="quiz-explanation-box" id="qExplanationBox" style="display: none;"></div>
+                </div>
+                <div class="quiz-footer-actions">
+                    <button class="sim-action-btn" id="revealAnsAction"><i class="fas fa-eye"></i> إظهار الإجابة الصحيحة</button>
+                    <button class="sim-action-btn" id="nextQAction" style="background: #0284c7;"><i class="fas fa-arrow-left"></i> السؤال التالي</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ربط السكريبت الخارجي -->
+    <script src="script.js"></script>
+</body>
+</html>
